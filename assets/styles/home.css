@@ -54,9 +54,12 @@
 }
 
 .home-sci {
-  display: flex;
-  gap: 13px;
-  margin-top: 25px;
+    position: absolute;
+    bottom: 150px;
+    width: 170px;
+    display: flex;
+    gap: 13px;
+    margin-left: 100px;
 }
 
 .home-sci a {
@@ -130,13 +133,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 5% 50px 5%;
-    margin-top: -100px;
+    padding: 80px 5% 40px 5%;
+    margin-top: 0;
     text-align: center;
   }
 
   .home-content {
     max-width: 100%;
+    margin: 0;
     position: static;
   }
 
@@ -150,19 +154,21 @@
 
   .home-content p {
     font-size: 18px;
-    margin: 20px 0 30px;
+    margin: 15px 0 25px;
   }
 
   .hero-image img {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     margin-top: 30px;
   }
 
   .home-sci {
     position: static;
-    margin-top: 30px;
+    width: auto;
+    margin: 20px 0 0 0;
     justify-content: center;
+    gap: 15px;
   }
 
   .home-sci a {
