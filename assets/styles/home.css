@@ -53,56 +53,6 @@
     margin: 20px 0 40px;
 }
 
-.home-sci {
-    position: absolute;
-    bottom: 150px;
-    width: 170px;
-    display: flex;
-    gap: 13px;
-    margin-left: 100px;
-}
-
-.home-sci a {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid black;
-    border-radius: 50%;
-    color: #333;
-    font-size: 24px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.home-sci a:nth-child(1):hover i { color: #0077B5; }  /* LinkedIn */
-.home-sci a:nth-child(2):hover i { color: #1877F2; }  /* Facebook */
-.home-sci a:nth-child(4):hover i { color: #E1306C; }  /* Instagram */
-
-.home-sci a:hover {
-  transform: scale(1.2);
-}
-
-.home-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: pink;
-    z-index: -1;
-    transition: .5s;
-}
-
-.home-sci a:hover::before {
-    width: 100%;
-}
-
 .facebook {
   color: #1877F2; 
 }
@@ -162,21 +112,6 @@
     height: 200px;
     margin-top: 30px;
   }
-
-  .home-sci {
-    position: static;
-    width: auto;
-    margin: 20px 0 0 0;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .home-sci a {
-    width: 36px;
-    height: 36px;
-    font-size: 20px;
-  }
-
   .menu-btn {
     display: block;
   }
