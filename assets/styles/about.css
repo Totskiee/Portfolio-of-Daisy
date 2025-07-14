@@ -67,7 +67,9 @@
 }
 
 .about-info {
-    margin-left: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
     width: 1100px;
     padding: 20px;
     border: 1px solid #000000;

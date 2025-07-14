@@ -40,14 +40,14 @@
     line-height: 1.2;
 }
 
-.home-content h3 {
-    
+.home-content p {
+    margin: 5px 0 0;
+    color: #777;
+    font-style: italic;
     font-size: 22px;
-    font-weight: 700;
-    color: rgb(0, 0, 0)
 }
 
-.home-content p {
+.home-content h5 {
     color: rgb(41, 40, 40);
     font-size: 20px;
     margin: 20px 0 40px;
