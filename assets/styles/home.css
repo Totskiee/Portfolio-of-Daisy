@@ -7,7 +7,7 @@
     padding: 100px 10% 0 10%;
     flex-wrap: wrap;
     position: relative;
-    margin-top: -120px;
+   
 }
 
 .home-content {
@@ -35,21 +35,21 @@
 
 .home-content h1 {
     color: rgb(37, 34, 34);
-    font-size: 45px;
+    font-size: 38px;
     font-weight: 700;
     line-height: 1.2;
 }
 
 .home-content h3 {
     
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 700;
     color: rgb(0, 0, 0)
 }
 
 .home-content p {
     color: rgb(41, 40, 40);
-    font-size: 22px;
+    font-size: 20px;
     margin: 20px 0 40px;
 }
 
