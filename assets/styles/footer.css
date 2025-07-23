@@ -1,5 +1,4 @@
 footer {
-    background: #f5e0c5;
     font-family: "Rubik", sans-serif;
     padding-top: 50px;
 }
@@ -25,10 +24,14 @@ footer h3 {
 .footer-content p {
     color: black;
     font-size: 18px;
-    width: 190px;
+    width: 250px;
     margin: auto;
     padding: 7px;
+    display: flex;             
+    align-items: center;      
+    gap: 8px;                  
 }
+
 
 .footer-content i {
     width: 20px;
