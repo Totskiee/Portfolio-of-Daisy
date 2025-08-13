@@ -2,7 +2,6 @@
 .contact-section {
     padding: 30px 15px;
     font-size: 18px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.575)), url(/assets/image/contact.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,12 +12,12 @@
     text-align: center;
 } 
 .contact-container h2 {
-    color: #f3f2f2;
+    color: #333232;
     margin-bottom: 10px;
 }
 .contact-container p {
     font-size: 1.1em;
-    color: #ffffff;
+    color: #363434;
     margin-bottom: 40px;
 }
 
@@ -27,21 +26,6 @@
   align-items: center;
 }
 
-.info-box {
-    flex: 1 1 250px;
-    margin: 10px;
-    background-color: #fad3b3;
-    padding: 20px;
-    border-radius: 8px;
-}
-.info-box h3 {
-    margin-bottom: 10px;
-    color: #e67e22;
-}
-.info-box p {
-    margin: 0;
-    color: #333;
-}
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -50,7 +34,7 @@
 .contact-form input,
   .contact-form textarea {
     padding: 12px;
-    border: 1px solid #ffffff;
+    border: 1px solid #5a5757;
     border-radius: 6px;
     font-size: 1em;
 }
@@ -73,25 +57,59 @@
   background-color: #000000;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .contact-section {
-    padding: 60px 20px;
-    font-size: 24px;
-  }
-
-  .contact-info {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .info-box {
-    flex: 1 1 250px;
-    margin: 10px;
+    padding: 20px 10px;
   }
 
   .contact-container {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-container p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    gap: 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95em;
+    padding: 10px;
+  }
+
+  .contact-form button,
+  .contact-form input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container h2 {
+    font-size: 1.2em;
+  }
+
+  .contact-container p {
+    font-size: 0.9em;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .contact-form button,
+  .contact-form input[type="submit"] {
+    font-size: 0.95em;
+    padding: 8px 18px;
   }
 }

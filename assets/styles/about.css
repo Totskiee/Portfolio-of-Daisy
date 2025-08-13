@@ -209,58 +209,50 @@
 }
 
 
-@media (max-width: 768px) {
+/* Tablet adjustments */
+@media (max-width: 1024px) {
   .card {
     width: 90%;
-    margin: 20px auto;
-    flex-direction: column;
-    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .cover-photo {
-    height: 200px;
-    border-radius: 8px 8px 0 0;
-    margin-top: 50px;
+  .about-info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .profile-info {
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin-top: -40px;
-    padding: 10px;
-  }
-
-  .profile-pic {
-    width: 130px;
-    height: 130px;
   }
 
   .text {
     margin-top: 20px;
     margin-left: 0;
-    text-align: center;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .cover-photo {
+    height: 300px;
+  }
+
+  .profile-pic {
+    width: 140px;
+    height: 140px;
   }
 
   .text h2 {
     font-size: 20px;
   }
 
-  .text p {
-    font-size: 14px;
-  }
-
-  .about-info {
-  width: 90%;
-  margin: 20px auto;
-  padding: 15px;
- }
-
   .about-info p {
     font-size: 16px;
-  }
-
-  .about h2 {
-    font-size: 20px;
   }
 
   .social-contact {
@@ -269,21 +261,45 @@
     padding: 0 15px;
   }
 
-  .resume-button {
-    text-align: center;
-    padding: 20px;
+  .tools-slider {
+    max-width: 100%;
+    margin: 20px auto;
   }
 
-  .btn {
-    font-size: 16px;
-    padding: 10px 20px;
+  .tool-card {
+    flex: 0 0 120px;
+    margin: 0 10px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .cover-photo {
+    height: 200px;
   }
 
-  .tech-stacks {
-    margin: 20px 15px;
+  .profile-pic {
+    width: 100px;
+    height: 100px;
   }
 
-  .tech-stacks h2 {
+  .text h2 {
     font-size: 18px;
+  }
+
+  .about-info {
+    padding: 15px;
+  }
+
+  .about-info p {
+    font-size: 14px;
+  }
+
+  .tool-card {
+    flex: 0 0 100px;
+  }
+
+  .tool-card img {
+    width: 70px;
   }
 }

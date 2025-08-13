@@ -32,27 +32,26 @@
     margin-bottom: 45px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+    .help-section {
+        padding: 20px 0;
+    }
 
     .help-info {
-        width: 90%;
+        width: 95%;
         height: auto;
-        padding: 20px;
-        background-size: cover;
-        background-position: center;
+        padding: 15px;
+        border-radius: 15px;
     }
 
     .help-info h1 {
-        margin-top: 50px;
-        margin-bottom: 15px;
-        font-size: 22px;
-        text-align: center;
+        margin-top: 30px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .help-info p {
-        font-size: 16px;
-        text-align: center;
-        margin-bottom: 30px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 }
-

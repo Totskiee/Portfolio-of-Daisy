@@ -1,26 +1,24 @@
+/* Base Styles (Desktop First) */
 .home {
   background: #f5e0c5;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 10% 10%;
   min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10% 10%;
-   
 }
 
 .home-content {
-    max-width: auto;
-    position: relative;
-    margin-left: 100px;
+  position: relative;
+  margin-left: 100px;
 }
 
 .hero-image img {
-    width: 300px;
-    height: 300px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    border-radius: 1000px;
+  width: 300px;
+  height: 300px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 1000px;
 }
 
 .hero-image img:hover {
@@ -29,79 +27,91 @@
 }
 
 .home-content h1 {
-    color: rgb(37, 34, 34);
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 1.2;
+  color: rgb(37, 34, 34);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .home-content p {
-    margin: 5px 0 0;
-    color: #777;
-    font-style: italic;
-    font-size: 22px;
+  margin: 5px 0 0;
+  color: #777;
+  font-style: italic;
+  font-size: 22px;
 }
 
 .home-content h5 {
-    color: rgb(41, 40, 40);
-    font-size: 20px;
-    margin: 20px 0 40px;
+  color: rgb(41, 40, 40);
+  font-size: 20px;
+  margin: 20px 0 40px;
 }
 
 .menu-btn {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-.menu-toggle {
-    display: none;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
+.menu-toggle {
+  display: none;
+}
+
+/* ======================
+   Responsive Media Queries
+   ====================== */
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
   .home {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 5% 40px 5%;
-    margin-top: 0;
     text-align: center;
+    padding: 8% 5%;
   }
-
   .home-content {
-    max-width: 100%;
-    margin: 0;
-    position: static;
+    margin-left: 0;
   }
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+}
 
+/* Mobile Landscape (≤ 768px) */
+@media (max-width: 768px) {
   .home-content h1 {
-    font-size: 32px;
+    font-size: 30px;
   }
-
-  .home-content h3 {
-    font-size: 24px;
-  }
-
   .home-content p {
     font-size: 18px;
-    margin: 15px 0 25px;
   }
-
+  .home-content h5 {
+    font-size: 18px;
+  }
   .hero-image img {
     width: 200px;
     height: 200px;
-    margin-top: 30px;
   }
   .menu-btn {
     display: block;
   }
+}
 
-  .menu-toggle:checked ~ .navbar {
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
+/* Mobile Portrait (≤ 480px) */
+@media (max-width: 480px) {
+  .home {
+    padding: 5% 2%;
+  }
+  .home-content h1 {
+    font-size: 26px;
+  }
+  .home-content p {
+    font-size: 16px;
+  }
+  .home-content h5 {
+    font-size: 16px;
+  }
+  .hero-image img {
+    width: 160px;
+    height: 160px;
   }
 }
