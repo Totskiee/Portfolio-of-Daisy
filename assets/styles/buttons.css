@@ -1,93 +1,93 @@
+/* Base Button Styles (Desktop First) */
 .button-container {
-    display: flex;
-    justify-content: center;
-    height: 50px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
 }
+
 .button-container1 {
-    display: flex;
-    justify-content: start;
-    width: 345px;
-    height: 50px;
+  display: flex;
+  justify-content: start;
+  width: 345px;
+  height: 50px;
 }
 
 .primary-button {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 100%;
-    background: black;
-    border: 2px solid white;
-    border-radius: 8px;
-    font-size: 19px;
-    color: beige;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 100%;
+  background: black;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 19px;
+  color: beige;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .secondary-button {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 100%;
-    background: black;
-    border: 2px solid white;
-    border-radius: 8px;
-    font-size: 19px;
-    color: beige;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 100%;
+  background: black;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 19px;
+  color: beige;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
 }
-
 
 .primary-button:hover {
-    color: black;
+  color: black;
 }
 
 .secondary-button {
-    background: transparent;
-    color: black;
+  background: transparent;
+  color: black;
 }
 
 .secondary-button:hover {
-    color: white;
-    background: black;
+  color: white;
+  background: black;
 }
 
 .secondary-button::before {
-    background: black;
+  background: black;
 }
 
 .primary-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: gray;
-    z-index: -1;
-    transition: .5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: gray;
+  z-index: -1;
+  transition: 0.5s;
 }
 
 .primary-button:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
-
 .resume-button {
-  text-align: center; 
+  text-align: center;
   margin: 30px 0;
 }
 
@@ -104,10 +104,65 @@
 }
 
 .primary-btn:hover {
-  background-color: #686564; 
+  background-color: #686564;
   transform: translateY(-2px);
 }
 
 .primary-btn:active {
   transform: translateY(0);
+}
+
+/* ======================
+   Responsive Media Queries
+   ====================== */
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .primary-button {
+    width: 250px;
+    font-size: 18px;
+  }
+  .secondary-button {
+    width: 150px;
+    font-size: 18px;
+  }
+}
+
+/* Mobile Landscape (≤ 768px) */
+@media (max-width: 768px) {
+  .button-container,
+  .button-container1 {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+  }
+  .primary-button {
+    width: 220px;
+    font-size: 17px;
+  }
+  .secondary-button {
+    width: 140px;
+    font-size: 17px;
+  }
+}
+
+/* Mobile Portrait (≤ 480px) */
+@media (max-width: 480px) {
+  .primary-button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .secondary-button {
+    width: 100%;
+    max-width: 180px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .primary-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
