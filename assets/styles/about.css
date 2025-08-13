@@ -174,74 +174,97 @@
     padding-top: 20px;
 }
 
-.tools-slider {
-  border: 1px solid black;
-  border-radius: 10px;
-  margin: 40px auto;
-  overflow: hidden;
-  max-width: 900px;
-}
-.tools-slider h2 {
-  margin: 10px 10px;
-  display: flex;
-  justify-content: start;
-}
-.tools-track {
-  display: flex;
-  animation: scrollTools 18s linear infinite;
-}
-
-.tool-card {
-  flex: 0 0 150px;
-  margin: 0 15px;
+.tools-section {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 40px 20px;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.tool-card img {
-  width: 100px;
+.tools-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.tool {
+  background-color: #f5f5f5;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tool1 {
+  background-color: #f5f5f5;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.tool img {
+  max-width: 60px;
   height: auto;
-  display: block;
-  margin: 0 auto 10px;
+  margin-bottom: 10px;
 }
 
-.tool-card p {
-  font-size: 14px;
-  font-weight: 500;
+.tool1 img {
+  height: auto;
+  max-width: 100px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.tool1 p{
+  margin: 0;
+  font-size: 0.85rem;
+}
+.tool p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.tool1:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px);
 }
 
 
+.tool:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-5px);
+}
 
-/* Tablet adjustments */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  /* Card container adjusts to screen width */
   .card {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
-  .about-info {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  /* Cover photo height smaller for mobile */
+  .cover-photo {
+    height: 250px;
+    margin-top: 30px;
   }
 
+  /* Profile info stacks vertically */
   .profile-info {
     flex-direction: column;
     align-items: center;
-    text-align: center;
     margin-top: -40px;
-  }
-
-  .text {
-    margin-top: 20px;
-    margin-left: 0;
-  }
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  .cover-photo {
-    height: 300px;
+    text-align: center;
   }
 
   .profile-pic {
@@ -249,59 +272,61 @@
     height: 140px;
   }
 
-  .text h2 {
-    font-size: 20px;
+  /* Reduce text margin */
+  .text {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  /* Adjust about info text size */
+  .about-info {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-info p {
     font-size: 16px;
   }
 
+  /* Social contact layout stacked */
   .social-contact {
     flex-direction: column;
     gap: 20px;
-    padding: 0 15px;
+    padding: 0;
   }
 
-  .tools-slider {
-    max-width: 100%;
-    margin: 20px auto;
+  /* Tools grid with bigger images on mobile */
+  .tools-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
-  .tool-card {
-    flex: 0 0 120px;
-    margin: 0 10px;
+  .tool img,
+  .tool1 img {
+    max-width: 80px;
   }
 }
 
-/* Small phones */
 @media (max-width: 480px) {
   .cover-photo {
     height: 200px;
   }
 
   .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   .text h2 {
-    font-size: 18px;
-  }
-
-  .about-info {
-    padding: 15px;
+    font-size: 20px;
   }
 
   .about-info p {
     font-size: 14px;
   }
 
-  .tool-card {
-    flex: 0 0 100px;
-  }
-
-  .tool-card img {
-    width: 70px;
+  .tool img,
+  .tool1 img {
+    max-width: 70px;
   }
 }
