@@ -1,4 +1,3 @@
-/* Base Styles (Desktop First) */
 .home {
   background: #f5e0c5;
   margin: 0 auto;
@@ -57,58 +56,56 @@
 }
 
 
-/* Tablets (≤ 992px) */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .home {
     flex-direction: column;
-    text-align: center;
     padding: 8% 5%;
+    text-align: center;
   }
+
   .home-content {
     margin-left: 0;
+    margin-top: 20px;
   }
+
   .hero-image img {
     width: 250px;
     height: 250px;
   }
-}
 
-/* Mobile Landscape (≤ 768px) */
-@media (max-width: 768px) {
   .home-content h1 {
-    font-size: 30px;
+    font-size: 32px;
   }
+
   .home-content p {
     font-size: 18px;
   }
-  .home-content h5 {
-    font-size: 18px;
+}
+
+/* Mobile and below */
+@media (max-width: 768px) {
+  .home {
+    padding: 6% 4%;
   }
+
   .hero-image img {
     width: 200px;
     height: 200px;
   }
-  .menu-btn {
-    display: block;
-  }
-}
 
-/* Mobile Portrait (≤ 480px) */
-@media (max-width: 480px) {
-  .home {
-    padding: 5% 2%;
-  }
   .home-content h1 {
-    font-size: 26px;
+    font-size: 28px;
   }
+
   .home-content p {
     font-size: 16px;
   }
+
   .home-content h5 {
     font-size: 16px;
   }
-  .hero-image img {
-    width: 160px;
-    height: 160px;
+
+  .menu-btn {
+    display: block; /* Show menu button for mobile */
   }
 }

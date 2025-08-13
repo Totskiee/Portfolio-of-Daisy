@@ -247,19 +247,16 @@
 }
 
 @media (max-width: 768px) {
-  /* Card container adjusts to screen width */
   .card {
     width: 90%;
     margin: 0 auto;
   }
 
-  /* Cover photo height smaller for mobile */
   .cover-photo {
     height: 250px;
     margin-top: 30px;
   }
 
-  /* Profile info stacks vertically */
   .profile-info {
     flex-direction: column;
     align-items: center;
@@ -272,13 +269,11 @@
     height: 140px;
   }
 
-  /* Reduce text margin */
   .text {
     margin-top: 20px;
     margin-left: 0;
   }
 
-  /* Adjust about info text size */
   .about-info {
     width: 90%;
     margin-left: auto;
@@ -289,14 +284,12 @@
     font-size: 16px;
   }
 
-  /* Social contact layout stacked */
   .social-contact {
     flex-direction: column;
     gap: 20px;
     padding: 0;
   }
 
-  /* Tools grid with bigger images on mobile */
   .tools-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
@@ -311,6 +304,7 @@
   .cover-photo {
     height: 200px;
   }
+  
 
   .profile-pic {
     width: 120px;
