@@ -67,14 +67,15 @@
 }
 
 .about-info {
-    justify-content: center;
-    align-items: center;
-    margin-left: 200px;
-    width: 1340px;
-    padding: 20px;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    padding: 20px 30px;
+  border: 1px solid rgb(70, 68, 68);
+  border-radius: 10px;
+  max-width: 900px; 
+  margin: 0 auto; 
+  padding: 20px;
+  text-align: center; 
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+
 }
 
 .about-info p {
@@ -90,6 +91,11 @@
 .profile-info .title {
     color: gray;
     font-style: italic;
+}
+
+.about-info h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 .about h2 {
@@ -203,10 +209,6 @@
   font-weight: 500;
 }
 
-@keyframes scrollTools {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 
 
 /* Tablet adjustments */

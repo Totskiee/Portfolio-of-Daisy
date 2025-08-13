@@ -56,9 +56,6 @@
   display: none;
 }
 
-/* ======================
-   Responsive Media Queries
-   ====================== */
 
 /* Tablets (≤ 992px) */
 @media (max-width: 992px) {
