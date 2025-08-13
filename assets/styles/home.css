@@ -1,24 +1,19 @@
 .home {
-    background: #f5e0c5;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 10% 0 10%;
-    flex-wrap: wrap;
-    position: relative;
+  background: #f5e0c5;
+  margin: 0 auto;
+  padding: 0 2rem;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10% 10%;
    
-}
-
-.home-content {
-    max-width: 700px;
-    position: relative;
-    margin-left: 100px;
 }
 
 .home-content {
     max-width: auto;
     position: relative;
+    margin-left: 100px;
 }
 
 .hero-image img {

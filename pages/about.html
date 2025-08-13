@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body>
    <header class="header">
-        <a href="/index.html" class="logo">Daisy.</a>
+        <a href="/index.html" class="logo">Daisy The VA.</a>
         <input type="checkbox" class="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="menu-btn">☰</label>
         <nav class="navbar">
@@ -27,30 +28,65 @@
     <div class="card-info">
     <div class="cover-photo"></div>
     <div class="profile-info">
-      <img src="/assets/image/profile2.jpeg" alt="Diasy Jao" class="profile-pic">
+      <img src="/assets/image/Daisy's Picture.jpg" alt="Diasy Jao" class="profile-pic">
       <div class="text">
         <h2>Daisy Jao</h2>
-        <p>Virtual Assistant</p>
+        <p>Real Estate / Virtual Assistant</p>
         </div>
       </div>
     </div>
   </div>
 
   <div class="about-info">
-    <h2>About</h2>
-    <p>
-      Hi there, I'm <strong>Daisy</strong>. Are you often overwhelmed by a flood of tasks and yearning for
-        a smoother workflow? With over 2 years of hands-on experience
-        in the dynamic BPO landscape, I've traversed from being a chat
-        sales agent in 2020 to now serving as a dedicated real estate
-        virtual assistant and social media manager.
+    <h2>About me</h2>
+    <p>Hi, I’m Daisy! A real estate virtual assistant with 4 years of solid 
+      experience supporting agents behind the scenes. From managing listings and contracts to 
+      creating social media content that actually gets engagement, I’ve been the go-to helping hand
+       for realtors who want to stay focused on what they do best: selling homes and serving clients.
     </p>
 
+    <p>I’ve worked with growing teams, busy solo agents, and everything in between. 
+      I know what it’s like to juggle deadlines, deals, and DMs all in one day and that’s exactly where I come in.</p>
+
+    <p>Outside the laptop, I’m a wife, a mom, and someone who understands the hustle (and the heart) 
+      behind building something meaningful.
+       I care about the work I do, and I care even more about the people I work with.
+      </p>
+
+    <p>If you're looking for someone reliable, easy to work with, 
+      and genuinely invested in helping you grow, you're in the right place.
+      </p>
+
 <div class="resume-button">
-  <a href="#" class="btn" download>Download Resume</a>
+  <button id="resumeBtn" class="primary-btn">Resume</button>
 </div>
-    </div>
-        </section>
+
+<!-- Modal -->
+<div id="resumeModal" class="modal">
+  <div class="modal-content">
+    <h2>Choose an option</h2>
+    <a href="../assets/resume.pdf" target="_blank" class="btn view">View Resume</a>
+    <a href="../assets/resume.pdf" download class="btn download">Download Resume</a>
+    <button id="cancelBtn" class="btn cancel">Cancel</button>
+  </div>
+</div>
+  </div>
+
+  <div class="tools-slider">
+    <h2>Tools</h2>
+  <div class="tools-track">
+    <div class="tool-card"><img src="/assets/image/google.png" alt="Google Workspace"><p>Google Workspace</p></div>
+    <div class="tool-card"><img src="/assets/image/Microsoft Power Automate.png" alt="Microsoft Power Automate"><p>Power Automate</p></div>
+    <div class="tool-card"><img src="/assets/image/later.png" alt="Later"><p>Later</p></div>
+    <div class="tool-card"><img src="/assets/image/trello.png" alt="Trello"><p>Trello</p></div>
+    <div class="tool-card"><img src="/assets/image/canva.jpeg" alt="Canva"><p>Canva</p></div>
+    <div class="tool-card"><img src="/assets/image/mailchimp.png" alt="Mailchimp"><p>Mailchimp</p></div>
+  </div>
+</div>
+
+</head>
+<body>
+
 
 </main>
 
@@ -60,7 +96,7 @@
                 <h3>Contact Me</h3>
                 <p><i class="fas fa-envelope"></i> theysayflower03@gmail.com</p>
                 <p><i class="fas fa-phone"></i> 09329031580</p>
-                <p><i class="fas fa-map-marker-alt"></i> Cordova, Cebu, Philippines</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cebu, Philippines</p>
             </div>
             <div class="footer-content">
                 <h3>Quick Links</h3>
@@ -81,9 +117,9 @@
             </div>
         </div>
         <div class="bottom-bar">
-            <p>&copy; 2025 Daisy Jao. All rights reserved.</p>
+            <p>&copy; 2025 Daisy The VA. All rights reserved.</p>
         </div>
     </footer>
-
+<script src="/assets/styles/resume.js"></script>
 </body>
 </html>

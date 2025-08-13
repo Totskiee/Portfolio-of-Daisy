@@ -61,16 +61,16 @@
 }
 
 .text p {
-    margin: 5px 0 0;
-    color: #777;
-    font-style: italic;
+  margin: 5px 0 0;
+  color: #777;
+  font-style: italic;
 }
 
 .about-info {
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
-    width: 1100px;
+    margin-left: 200px;
+    width: 1340px;
     padding: 20px;
     border: 1px solid #000000;
     border-radius: 10px;
@@ -78,7 +78,8 @@
 }
 
 .about-info p {
-    font-size: 20px;
+  margin-bottom: 1rem;
+  font-size: 20px;
 }
 
 .profile-info h1 {
@@ -166,6 +167,47 @@
     border-top: 1px solid #eee;
     padding-top: 20px;
 }
+
+.tools-slider {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 40px auto;
+  overflow: hidden;
+  max-width: 900px;
+}
+.tools-slider h2 {
+  margin: 10px 10px;
+  display: flex;
+  justify-content: start;
+}
+.tools-track {
+  display: flex;
+  animation: scrollTools 18s linear infinite;
+}
+
+.tool-card {
+  flex: 0 0 150px;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.tool-card img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.tool-card p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes scrollTools {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 
 @media (max-width: 768px) {
   .card {
