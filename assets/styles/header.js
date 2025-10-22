@@ -1,21 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".navbar a");
-  const path = window.location.pathname;
-
-  // normalize the current page name (remove folders, handle root)
-  let currentPage = path.substring(path.lastIndexOf("/") + 1);
-
-  // if the user is at the root ("/"), make it act like index.html
-  if (currentPage === "" || currentPage === "/") {
-    currentPage = "index.html";
-  }
+  const currentPath = window.location.pathname;
 
   navLinks.forEach(link => {
-    // get only the filename of each link (e.g. "about.html")
-    const linkPage = link.getAttribute("href").split("/").pop();
+    const linkPath = link.getAttribute("href");
 
-    // check if it matches current page
-    if (linkPage === currentPage) {
+    // Handle Home: make both "/" and "/index.html" count as Home
+    if (
+      (currentPath === "/" || currentPath.endsWith("/index.html")) &&
+      (linkPath === "/index.html" || linkPath === "/")
+    ) {
+      link.classList.add("active");
+    }
+    // Handle all other pages normally
+    else if (currentPath.endsWith(linkPath)) {
       link.classList.add("active");
     } else {
       link.classList.remove("active");
