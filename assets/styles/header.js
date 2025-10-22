@@ -1,18 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".navbar a");
+  const path = window.location.pathname;
 
-  // Get current page name (e.g. "about.html" or "")
-  let currentPage = window.location.pathname.split("/").pop();
+  // normalize the current page name (remove folders, handle root)
+  let currentPage = path.substring(path.lastIndexOf("/") + 1);
 
-  // If at root (e.g., "/" or empty), treat it as index.html
+  // if the user is at the root ("/"), make it act like index.html
   if (currentPage === "" || currentPage === "/") {
     currentPage = "index.html";
   }
 
   navLinks.forEach(link => {
+    // get only the filename of each link (e.g. "about.html")
     const linkPage = link.getAttribute("href").split("/").pop();
 
-    // Add active class only to the current page
+    // check if it matches current page
     if (linkPage === currentPage) {
       link.classList.add("active");
     } else {
