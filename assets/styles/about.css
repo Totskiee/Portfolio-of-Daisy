@@ -214,11 +214,10 @@
   transition: transform .35s ease, box-shadow .35s ease, background .35s ease;
 }
 
-/* --- Image itself --- */
 .tool-img img {
   display: block;
-  width: 800px;              /* fixed target size */
-  max-width: 100%;           /* responsive fallback */
+  width: 800px;             
+  max-width: 100%;           
   height: auto;
   border-radius: 14px;
   user-select: none;
