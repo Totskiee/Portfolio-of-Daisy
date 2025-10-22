@@ -52,7 +52,6 @@
   border-bottom: 2px solid rgb(218, 9, 44);
 }
 
-
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
