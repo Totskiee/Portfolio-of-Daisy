@@ -5,118 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="/assets/styles/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
 </head>
 <body>
-    <header class="header">
-        <a href="/index.html" class="logo">Daisy The VA.</a>
-            <input type="checkbox" class="menu-toggle" id="menu-toggle">
-            <label for="menu-toggle" class="menu-btn">☰</label>
 
-        <nav class="navbar">
-            <a href="/index.html">Home</a>
-            <a href="/pages/about.html">About</a>
-            <a href="/pages/testimonial.html">Testimonial</a>
-            <a href="/pages/contacnt.html">Contact</a>
-        </nav>
-    </header>
-    
+<header class="header">
+  <a href="/index.html" class="logo">Daisy The VA.</a>
+  <input type="checkbox" class="menu-toggle" id="menu-toggle">
+  <label for="menu-toggle" class="menu-btn">☰</label>
+
+  <nav class="navbar">
+    <a href="/index.html" class="active">Home</a>
+    <a href="/pages/about.html">About</a>
+    <a href="/pages/testimonial.html">Testimonial</a>
+    <a href="/pages/contact.html">Contact</a>
+  </nav>
+</header>
+
 <main>
-   <section class="about">
-  <div class="card">
-    <div class="card-info">
-    <div class="cover-photo"></div>
-    <div class="profile-info">
-      <img src="/assets/image/Daisy's Picture.jpg" alt="Diasy Jao" class="profile-pic">
-      <div class="text">
-        <h2>Daisy Jao</h2>
-        <p>Real Estate  Virtual Assistant</p>
+  <section class="about">
+    <div class="card">
+      <div class="card-info">
+        <div class="cover-photo"></div>
+        <div class="profile-info">
+          <img src="/assets/image/Daisy's Picture.jpg" alt="Daisy Jao" class="profile-pic">
+          <div class="text">
+            <h2>Daisy Jao</h2>
+            <p>Real Estate Virtual Assistant</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="about-info">
-    <h2>About me</h2>
-    <p>Hi, I’m <strong>Daisy</strong>! A real estate virtual assistant with 4 years of solid 
-      experience supporting agents behind the scenes. From managing listings and contracts to 
-      creating social media content that actually gets engagement, I’ve been the go-to helping hand
-       for realtors who want to stay focused on what they do best: selling homes and serving clients.
-    </p>
+    <div class="about-info">
+      <h2>About me</h2>
+      <p>Hi, I’m <strong>Daisy</strong>! A real estate virtual assistant with 4 years of solid 
+      experience supporting agents behind the scenes...</p>
 
-    <p>I’ve worked with growing teams, busy solo agents, and everything in between. 
-      I know what it’s like to juggle deadlines, deals, and DMs all in one day and that’s exactly where I come in.</p>
+      <p>I’ve worked with growing teams, busy solo agents...</p>
 
-    <p>Outside the laptop, I’m a wife, a mom, and someone who understands the hustle (and the heart) 
-      behind building something meaningful.
-       I care about the work I do, and I care even more about the people I work with.
-      </p>
+      <p>Outside the laptop, I’m a wife, a mom, and someone who understands...</p>
 
-    <p>If you're looking for someone reliable, easy to work with, 
-      and genuinely invested in helping you grow, you're in the right place.
-      </p>
+      <p>If you're looking for someone reliable, easy to work with...</p>
 
-<div class="resume-button">
+      <div class="resume-button">
   <button id="resumeBtn" class="primary-btn">Resume</button>
+  <button id="certBtn" class="primary-btn">My Certificates</button>
 </div>
 
-<!-- Modal -->
-<div id="resumeModal" class="modal">
-  <div class="modal-content">
-    <h2>Choose an option</h2>
-    <a href="/assets/Daisy Resume2025 (1).pdf" target="_blank" class="btn view">View Resume</a>
-    <a href="/assets/Daisy Resume2025 (1).pdf" download class="btn download">Download Resume</a>
-    <button id="cancelBtn" class="btn cancel">Cancel</button>
+
+<!-- Certificates Section (Hidden by default) -->
+<div id="certificatesSection" class="certificates hidden">
+  <h2>My Certificates</h2>
+  <div class="certificates-container">
+    <img src="/assets/image/Facebook Ads Certificate.png" alt="Certificate 1">
+    <img src="/assets/image/Social Media Management Certificate.png" alt="Certificate 2">
+    <img src="/assets/image/Virtual Assistant Certificate.png" alt="Certificate 3">
+    <img src="/assets/image/WordPress Certificate.png" alt="Certificate 3">
+    <img src="/assets/image/leadgen cert.png" alt="Certificate 3">
+
   </div>
 </div>
-  </div>
+
+
+
+      <!-- Modal -->
+      <div id="resumeModal" class="modal">
+        <div class="modal-content">
+          <h2>Choose an option</h2>
+          <a href="/assets/Daisy Resume2025 (1).pdf" target="_blank" class="btn view">View Resume</a>
+          <a href="/assets/Daisy Resume2025 (1).pdf" download class="btn download">Download Resume</a>
+          <button id="cancelBtn" class="btn cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="tools-section">
-  <h2>Tools I Use</h2>
-  <div class="tool-img">
-     <img src="/assets/image/mytools.jpeg" alt="Tool 14 Logo">
-  </div>
-  
-</section>
-
-</head>
-<body>
-
-
+    <h2>Tools I Use</h2>
+    <div class="tool-img">
+      <img src="/assets/image/mytools.jpeg" alt="Tools I Use">
+    </div>
+  </section>
 </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <h3>Contact Me</h3>
-                <p><i class="fas fa-envelope"></i> theysayflower03@gmail.com</p>
-                <p><i class="fas fa-phone"></i> 09329031580</p>
-                <p><i class="fas fa-map-marker-alt"></i> Cebu, Philippines</p>
-            </div>
-            <div class="footer-content">
-                <h3>Quick Links</h3>
-                <ul class="list">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/pages/about.html">About</a></li>
-                    <li><a href="/pages/testimonial.html">Testimonial</a></li>
-                    <li><a href="/pages/contacnt.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-content">
-                <h3>Follow Me</h3>
-                <ul class="social-icons">
-                <li><a href="https://www.linkedin.com/in/daisy-jao-42438b1b1/"><i class='bx bxl-linkedin' ></i></a></a></li>
-                <li><a href="https://www.facebook.com/lifewithdaisyph"><i class='bx bxl-facebook' ></i></a></li>
-                <li><a href="https://www.instagram.com/daisytheva/"><i class='bx bxl-instagram-alt' ></i></a></li>
-            </ul>
-            </div>
-        </div>
-        <div class="bottom-bar">
-            <p>&copy; 2025 Daisy The VA. All rights reserved.</p>
-        </div>
-    </footer>
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <h3>Contact Me</h3>
+      <p><i class="fas fa-envelope"></i> theysayflower03@gmail.com</p>
+      <p><i class="fas fa-phone"></i> 09329031580</p>
+      <p><i class="fas fa-map-marker-alt"></i> Cebu, Philippines</p>
+    </div>
+
+    <div class="footer-content">
+      <h3>Quick Links</h3>
+      <ul class="list">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/testimonial.html">Testimonial</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h3>Follow Me</h3>
+      <ul class="social-icons">
+        <li><a href="https://www.linkedin.com/in/daisy-jao-42438b1b1/"><i class="bx bxl-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/lifewithdaisyph"><i class="bx bxl-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/daisytheva/"><i class="bx bxl-instagram-alt"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <p>&copy; 2025 Daisy The VA. All rights reserved.</p>
+  </div>
+</footer>
+
 <script src="/assets/styles/resume.js"></script>
 <script src="/assets/styles/header.js"></script>
 

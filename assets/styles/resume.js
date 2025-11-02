@@ -17,4 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.style.display = "none";
     }
   });
+
+  const certBtn = document.getElementById('certBtn');
+const certificatesSection = document.getElementById('certificatesSection');
+
+certBtn.addEventListener('click', () => {
+  certificatesSection.classList.toggle('hidden');
+});
+
 });

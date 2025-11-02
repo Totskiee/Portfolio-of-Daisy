@@ -12,6 +12,14 @@
   align-items: center;
 }
 
+.resume-button {
+  display: flex;
+  flex-direction: column; /* stack buttons vertically */
+  align-items: center;
+  gap: 10px; /* space between buttons */
+}
+
+
 /* Modal box */
 .modal-content {
   background: #fff;
