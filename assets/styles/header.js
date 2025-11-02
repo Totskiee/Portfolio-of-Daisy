@@ -38,5 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.remove("active");
     }
   });
+  const currentPage = window.location.pathname.split("/").pop();
+
 });
 
