@@ -1,44 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".navbar a");
-  const currentPath = window.location.pathname;
+  let currentPath = window.location.pathname;
+
+  // Normalize the path (handle Netlify / Live Server differences)
+  if (currentPath.endsWith("/") || currentPath === "") {
+    currentPath = "/index.html";
+  } else if (!currentPath.endsWith(".html")) {
+    currentPath += ".html";
+  }
 
   navLinks.forEach(link => {
-    const linkPath = link.getAttribute("href");
+    let linkPath = link.getAttribute("href");
 
-    // Handle Home (both "/" and "/index.html")
-    if (
-      (currentPath === "/" || currentPath.endsWith("/index.html")) &&
-      (linkPath === "/index.html" || linkPath === "/")
-    ) {
-      link.classList.add("active");
+    // Normalize link paths too
+    if (linkPath === "/" || linkPath === "./") {
+      linkPath = "/index.html";
+    } else if (!linkPath.endsWith(".html") && !linkPath.includes("#")) {
+      linkPath += ".html";
     }
 
-    // Handle About page
-    else if (currentPath.endsWith("/pages/about.html") && linkPath.endsWith("/pages/about.html")) {
+    // Compare normalized paths
+    if (currentPath.endsWith(linkPath)) {
       link.classList.add("active");
-    }
-
-    // Handle Testimonial page
-    else if (currentPath.endsWith("/pages/testimonial.html") && linkPath.endsWith("/pages/testimonial.html")) {
-      link.classList.add("active");
-    }
-
-    // ✅ Handle Certificates page
-    else if (currentPath.endsWith("/pages/certificates.html") && linkPath.endsWith("/pages/certificates.html")) {
-      link.classList.add("active");
-    }
-
-    // Handle Contact page
-    else if (currentPath.endsWith("/pages/contact.html") && linkPath.endsWith("/pages/contact.html")) {
-      link.classList.add("active");
-    }
-
-    // Remove "active" from all others
-    else {
+    } else {
       link.classList.remove("active");
     }
   });
-  const currentPage = window.location.pathname.split("/").pop();
-
 });
-
