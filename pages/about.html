@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+
+    <!-- Your Styles -->
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- ✅ Swiper CSS (correct place) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
+
 <body>
 
 <header class="header">
@@ -40,47 +46,47 @@
 
     <div class="about-info">
       <h2>About me</h2>
-      <p>Hi, I’m <strong>Daisy</strong>! A real estate virtual assistant with 4 years of solid 
-      experience supporting agents behind the scenes...</p>
+      <p>Hi, I’m <strong>Daisy</strong>! A real estate virtual assistant...</p>
 
       <p>I’ve worked with growing teams, busy solo agents...</p>
 
-      <p>Outside the laptop, I’m a wife, a mom, and someone who understands...</p>
+      <p>Outside the laptop, I’m a wife, a mom...</p>
 
-      <p>If you're looking for someone reliable, easy to work with...</p>
+      <p>If you're looking for someone reliable...</p>
 
       <div class="resume-button">
-  <button id="resumeBtn" class="primary-btn">Resume</button>
-  <button id="certBtn" class="primary-btn">My Certificates</button>
-</div>
-
-
-<!-- Certificates Section (Hidden by default) -->
-<div id="certificatesSection" class="certificates hidden">
-  <h2>My Certificates</h2>
-  <div class="certificates-container">
-    <img src="/assets/image/Facebook Ads Certificate.png" alt="Certificate 1">
-    <img src="/assets/image/Social Media Management Certificate.png" alt="Certificate 2">
-    <img src="/assets/image/Virtual Assistant Certificate.png" alt="Certificate 3">
-    <img src="/assets/image/WordPress Certificate.png" alt="Certificate 3">
-    <img src="/assets/image/leadgen cert.png" alt="Certificate 3">
-
-  </div>
-</div>
-
-
+          <button id="resumeBtn" class="primary-btn">Resume</button>
+      </div>
 
       <!-- Modal -->
       <div id="resumeModal" class="modal">
         <div class="modal-content">
           <h2>Choose an option</h2>
-          <a href="/assets/Daisy Resume2025 (1).pdf" target="_blank" class="btn view">View Resume</a>
-          <a href="/assets/Daisy Resume2025 (1).pdf" download class="btn download">Download Resume</a>
+          <a href="/assets/Daisy Jao.pdf" target="_blank" class="btn view">View Resume</a>
+          <a href="/assets/Daisy Jao.pdf" download class="btn download">Download Resume</a>
           <button id="cancelBtn" class="btn cancel">Cancel</button>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Certificates Section -->
+  <div id="certificatesSection" class="certificates">
+      <h2>My Certificates</h2>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/assets/image/Facebook Ads Certificate.png"></div>
+          <div class="swiper-slide"><img src="/assets/image/Social Media Management Certificate.png"></div>
+          <div class="swiper-slide"><img src="/assets/image/Virtual Assistant Certificate.png"></div>
+          <div class="swiper-slide"><img src="/assets/image/WordPress Certificate.png"></div>
+          <div class="swiper-slide"><img src="/assets/image/leadgen cert.png"></div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+  </div>
 
   <section class="tools-section">
     <h2>Tools I Use</h2>
@@ -123,8 +129,13 @@
   </div>
 </footer>
 
+<!-- ✅ Swiper JS (must load BEFORE certificate.js) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Your JS Files -->
 <script src="/assets/js/resume.js"></script>
 <script src="/assets/js/header.js"></script>
+<script src="/assets/js/certificate.js"></script>
 
 </body>
 </html>
